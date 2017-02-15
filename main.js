@@ -83,7 +83,7 @@ function generateQuiz() {
 
 		for (var j = 0; j < answers[i].length; j++) {
 			var isCorrect = (questions[i][1] === j) ? 1 : 0;
-			html += '<input type="radio" id="q'+i+'a'+j+ '"name="answer' +i+ '" value="' + isCorrect + '"><label for="q'+i+'a'+j+'"> ' + answers[i][j] + '</label><br>';
+			html += '<input type="radio" id="q'+i+'a'+j+ '"name="answer' +i+ '" value="' + isCorrect + '"><label for="q'+i+'a'+j+'"> ' + answers[i][j] + '</label><p></p>';
 		}
 
 		html += '</div>';
@@ -99,7 +99,7 @@ function nextQuestion() {
 	currentQuestion++;
 	if (currentQuestion >= 9) {
 		checkAnswers();
-		document.getElementById('finalAnswer').innerHTML += " You scored <b>" + total + "</b> questions correct! <br> Refresh to try again.";
+		document.getElementById('finalAnswer').innerHTML += " You scored <b>" + total + "</b> questions correct out of 10! <br> Refresh to try again.";
 		document.getElementById('check').style.display = "none";
 		return;
 	}
