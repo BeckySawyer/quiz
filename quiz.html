@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+	<title> Fantastic CSS Quiz </title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+	<h1> HTML and CSS Quiz </h1>
+	<h2> Test your knowledge </h2>
+</div>
+
+<div id="validatebackground">
+	<h1> Please sign in to start the quiz </h1>
+	<b>Enter name:</b> <input type="text" id="name" placeholder="Name"> <br>
+	<b>Enter email:</b> <input type="text" id="email" placeholder="Email Address"> <br>
+	<button onclick="validate()"> Validate </button>
+	<div id="validate"></div>
+</div>
+
+<div id="quizbackground">
+	<div id="quiz"> </div>
+	<button id="check"> Next </button>
+	<div id="finalAnswer"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
